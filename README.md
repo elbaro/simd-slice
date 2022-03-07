@@ -37,7 +37,7 @@ both2:    61.943µs (R²=0.992, 16915 iterations in 77 samples)
 both3:    82.678µs (R²=0.997, 12705 iterations in 74 samples)
 ```
 
-simd  = simd-slice
-both1 = rayon chunks(4) + std::simd
-both2 = rayon chunks(4096) + std::simd
-both3 = rayon chunks(slice.len()/num_cores) + std::simd
+- simd  = simd-slice
+- both1 = rayon chunks(4) + std::simd
+- both2 = rayon chunks(4096) + std::simd
+- both3 = rayon chunks(slice.len()/num_cores) + std::simd
